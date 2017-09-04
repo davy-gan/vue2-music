@@ -137,7 +137,7 @@
       },
       _checkMore(data) {
         const song = data.song
-        if (!song.list.length || (song.curnum + song.curpage * perpage) > song.totalnum) {
+        if (!song.list.length || (song.curpage * perpage) >= song.totalnum) {
           this.hasMore = false
         }
       },
